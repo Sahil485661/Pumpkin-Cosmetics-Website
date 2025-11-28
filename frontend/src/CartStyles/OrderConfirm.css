@@ -1,0 +1,233 @@
+.order-confirm-container {
+  max-width: 1200px;
+  margin: 100px auto 40px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  min-height: 60vh;
+}
+
+.order-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.shipping-info-section,
+.cart-items-section {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.shipping-info-section h2,
+.cart-items-section h2 {
+  color: var(--primary-dark);
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.info-detail p {
+  margin: 10px 0;
+  color: #666;
+}
+
+.confirm-cart-item {
+  display: flex;
+  gap: 15px;
+  padding: 15px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.confirm-cart-item:last-child {
+  border-bottom: none;
+}
+
+.confirm-cart-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.confirm-cart-item div p {
+  margin: 5px 0;
+  font-weight: 600;
+}
+
+.confirm-cart-item div span {
+  color: #666;
+  font-size: 14px;
+}
+
+.order-summary-section {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  height: fit-content;
+  position: sticky;
+  top: 20px;
+}
+
+.order-summary-section h2 {
+  color: var(--primary-dark);
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.summary-detail {
+  margin: 15px 0;
+}
+
+.summary-detail div {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  color: #666;
+}
+
+.total-price {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 2px solid #f0f0f0;
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--primary-dark);
+}
+
+.total-price span {
+  color: #666;
+}
+
+.proceed-payment-btn {
+  width: 100%;
+  padding: 14px;
+  background: var(--primary-main);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  margin-top: 20px;
+}
+
+.proceed-payment-btn:hover {
+  background: var(--primary-dark);
+}
+
+@media (max-width: 768px) {
+  .order-confirm-container {
+    grid-template-columns: 1fr;
+    margin-top: 80px;
+  }
+}
+
+.confirm-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.confirm-header {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.confirm-table-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.confirm-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.confirm-table caption {
+    text-align: left;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 10px;
+    color: #555;
+}
+
+.confirm-table th,
+.confirm-table td {
+    text-align: left;
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+.confirm-table th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+.confirm-table td {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.order-product-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.proceed-button {
+    display: block;
+    margin: 20px auto 0;
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: var(--bg-primary);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.proceed-button:hover {
+    background-color: var(--bg-secondary);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .confirm-table-container {
+        gap: 15px;
+    }
+
+    .confirm-table caption {
+        font-size: 1rem;
+    }
+
+    .confirm-table th,
+    .confirm-table td {
+        font-size: 0.8rem;
+    }
+
+    .proceed-button {
+        padding: 10px 25px;
+        font-size: 0.9rem;
+    }
+}

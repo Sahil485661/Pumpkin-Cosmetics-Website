@@ -1,0 +1,267 @@
+.admin-orders-container {
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    padding: 40px 20px;
+}
+
+.admin-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 40px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+
+  width: 100%;            /* Full width */
+  box-sizing: border-box; /* Include padding in width */
+  overflow: visible;      /* Prevent hiding */
+  display: flex;          /* Align items horizontally */
+  flex-wrap: wrap;        /* Allow wrapping if too long */
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.admin-header h1 {
+  margin: 0 0 10px 0;
+  font-size: 2.5rem;
+  font-weight: 800;        /* Bold for visibility */
+  color: #ffffff;          /* Ensure text is bright on gradient */
+  line-height: 1.2;        /* Prevent text from cutting off */
+  word-wrap: break-word;   /* Wrap long titles if needed */
+  overflow: visible;       /* Avoid clipping */
+}
+
+
+.order-stats {
+    display: flex;
+    gap: 40px;
+    margin-top: 10px;
+}
+
+.order-stats p {
+    margin: 0;
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+.orders-table-wrapper {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: auto;
+    margin-bottom: 30px;
+}
+
+.orders-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+}
+
+.orders-table thead {
+    background-color: #f9f9f9;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.orders-table th {
+    padding: 16px;
+    text-align: left;
+    font-weight: 600;
+    color: #93c514;
+}
+
+.orders-table tbody tr {
+    border-bottom: 1px solid #e0e0e0;
+    transition: background-color 0.2s;
+}
+
+.orders-table tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+.orders-table td {
+    padding: 16px;
+    color: #555;
+}
+
+.customer-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.customer-info .name {
+    margin: 0;
+    font-weight: 600;
+    color: #333;
+}
+
+.customer-info .email {
+    margin: 0;
+    font-size: 0.85rem;
+    color: #888;
+}
+
+.amount {
+    font-weight: 600;
+    color: #667eea;
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.status-badge.processing {
+    background-color: #ffd93d;
+    color: #333;
+}
+
+.status-badge.shipped {
+    background-color: #4ecdc4;
+    color: white;
+}
+
+.status-badge.delivered {
+    background-color: #51cf66;
+    color: white;
+}
+
+.status-badge.cancelled {
+    background-color: #ff6b6b;
+    color: white;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.status-select {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    background-color: white;
+    cursor: pointer;
+    transition: border-color 0.2s;
+}
+
+.status-select:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+.btn-update,
+.btn-delete {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-update {
+    background-color: #667eea;
+    color: white;
+}
+
+.btn-update:hover:not(:disabled) {
+    background-color: #5568d3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(102, 126, 234, 0.3);
+}
+
+.btn-update:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.btn-delete {
+    background-color: #ff6b6b;
+    color: white;
+}
+
+.btn-delete:hover {
+    background-color: #ee5a52;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(255, 107, 107, 0.3);
+}
+
+.btn-delete.confirm {
+    background-color: #cc0000;
+    animation: pulse 0.5s;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+.error-message {
+    background-color: #ffe0e0;
+    color: #d32f2f;
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border-left: 4px solid #d32f2f;
+}
+
+.no-orders {
+    padding: 40px;
+    text-align: center;
+    color: #999;
+}
+
+.no-orders p {
+    font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+    .admin-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .order-stats {
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    .orders-table {
+        font-size: 0.8rem;
+    }
+
+    .orders-table th,
+    .orders-table td {
+        padding: 10px;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .status-select,
+    .btn-update,
+    .btn-delete {
+        width: 100%;
+    }
+
+    .customer-info {
+        font-size: 0.85rem;
+    }
+}
+  
