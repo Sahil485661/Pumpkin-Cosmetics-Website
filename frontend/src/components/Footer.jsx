@@ -9,23 +9,23 @@ function Footer() {
                 <div className='footer-section contact'>
                     <h3>Contact Us</h3>
                     <p><Home/>Address: Satna Incubation Center Behind the Collectrate Dhawari (M.P) 485001</p>
-                    <p><Phone fontSize='small' />Phone: 9785943344</p>
+                    <p><Phone fontSize='small' />Phone: 8120063043</p>
                     <p><Mail fontSize='small' />Email: support@pumpkin_cosmetics.com</p>
                 </div>
                 {/* Section-2 */}
                 <div className='footer-section social'>
                     <h3>Follow Us</h3>
                     <div className='social-links'>
-                        <a href="" target='_blank'>
+                        <a href="https://github.com/Sahil485661" target='_blank'>
                             <GitHub className='social-icon' />
                         </a>
-                        <a href="" target='_blank'>
+                        <a href="https://www.linkedin.com/in/sahil-vishwakarma-25b749256" target='_blank'>
                             <LinkedIn className='social-icon' />
                         </a>
                         <a href="" target='_blank'>
                             <Instagram className='social-icon' />
                         </a>
-                        <a href="" target='_blank'>
+                        <a href="https://wa.me/918120063043" target='_blank'>
                             <WhatsApp className='social-icon' />
                         </a>
                     </div>

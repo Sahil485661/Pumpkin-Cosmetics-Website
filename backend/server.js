@@ -4,7 +4,10 @@ const configPath = process.cwd().endsWith('backend')
   ? "./config/config.env" 
   : "./backend/config/config.env";
 
-dotenv.config({ path: configPath });
+if(process.env.NODE_ENV !== 'production') {
+    dotenv.config({ path: configPath });
+}  
+
 
 import app from "./app.js";
 import { connectMongoDatabase } from "./config/db.js";
