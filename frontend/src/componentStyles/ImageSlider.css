@@ -1,7 +1,7 @@
 .image-slider-container {
     position: relative;
     width: 100%;
-    height: 450px; 
+    height: 100vh; 
     overflow: hidden;
     margin-top: 6rem;
   }
@@ -19,7 +19,7 @@
   .slider-item img {
     width: 100%; 
     height: 450px; 
-    object-fit: cover; 
+    object-fit: contain; 
   }
   
   .slider-dots {
