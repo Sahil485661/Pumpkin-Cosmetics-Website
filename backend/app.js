@@ -39,6 +39,14 @@ app.use("/api/v1", dashboard);
 
 // Server static files
 app.use(express.static(path.join(__dirname, '../frontend/dist')));
+// Health Check Endpoint
+app.get('/health', (req, res) => {
+  res.status(200).json({
+    status: 'active',
+    message: 'Server is running smoothly',
+    timestamp: new Date()
+  });
+});
 app.get(/.*/, (_, res) => {
     res.sendFile(path.resolve(__dirname, '../frontend/dist/index.html'));
 })
