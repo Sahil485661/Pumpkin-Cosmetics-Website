@@ -1,6 +1,6 @@
 # Pumpkin Cosmetics Website
 
-A modern e-commerce storefront and admin dashboard for a skincare and cosmetics brand. The project combines a responsive React frontend with a secure Express + MongoDB backend to support product browsing, cart management, checkout, user authentication, and product administration.
+A modern e-commerce storefront and admin dashboard for a skincare and cosmetics brand. The project combines a responsive React frontend with a secure Express + MongoDB backend to support product browsing, user authentication, checkout, and admin management.
 
 Live Demo: https://pumpkin-cosmetics-website.onrender.com/
 
@@ -78,6 +78,16 @@ The app includes a polished cosmetic shop aesthetic with:
 - Product detail view with quantity selector
 - Cart and checkout experience
 - Admin management screens
+
+### Demo Gallery
+
+![Homepage Preview](./Screenshot%202026-10-03%20124720.png)
+
+![Product Listing](./Screenshot%202026-10-03%20124752.png)
+
+![Cart and Checkout Experience](./Screenshot%202026-10-03%20124818.png)
+
+![Admin Dashboard Preview](./Screenshot%202026-10-03%20135117.png)
 
 ## Getting Started
 
@@ -180,4 +190,3 @@ This project is for educational/demo purposes and is not currently configured wi
 ## Author
 
 Sahil485661
-
