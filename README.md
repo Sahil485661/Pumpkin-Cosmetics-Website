@@ -77,7 +77,6 @@ The app includes a polished cosmetic shop aesthetic with:
 - Product cards with pricing and reviews
 - Product detail view with quantity selector
 - Cart and checkout experience
-- Admin management screens
 
 ### Demo Gallery
 
@@ -87,7 +86,7 @@ The app includes a polished cosmetic shop aesthetic with:
 
 ![Cart and Checkout Experience](./Screenshot%202026-10-03%20124818.png)
 
-![Admin Dashboard Preview](./Screenshot%202026-10-03%20135117.png)
+![Preview](./Screenshot%202026-10-03%20135117.png)
 
 ## Getting Started
 
